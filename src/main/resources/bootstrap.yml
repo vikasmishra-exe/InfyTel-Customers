@@ -1,0 +1,19 @@
+spring:
+  application:
+    name: CustomerMS
+  cloud:
+    consul:
+      discovery:
+        hostname: localhost
+      config:
+        enabled: true
+        prefix: config
+        defaultContext: application
+        profile-separator: '::'
+        format: YAML
+
+server:
+  port: 8200
+ 
+#planURI: http://localhost:8400/plans/
+#friendURI: http://localhost:9300/friendFamily/
